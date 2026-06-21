@@ -44,22 +44,22 @@ Use one cron job with one combined pre-run script:
 ```markdown
 # AI Daily Intelligence Brief｜YYYY-MM-DD
 
-2-4 sentence executive overview.
+2-4 句总览：今天最重要的行业/资本共同信号是什么。
 
-## 1. AI Industry News
-- [Date] Event title — 2-3 sentences: what happened, why it matters, product/business/market implication. Source: URL1; URL2 if useful. Confidence: High/Medium/Low.
+## 1. AI 行业动态
+- [月日] 事件标题 — 2-3 句解释谁做了什么、为什么重要、对产品/商业/竞争格局意味着什么。来源：URL1；URL2（如有）。置信度：高/中/低。
 
-## 2. AI Investment & Funding
-- [Date] Company/project raised/completed/reported [amount/stage] — investors, founder/team when available, business direction, why it matters. Source: URL1; URL2 if useful. Confidence: High/Medium/Low.
+## 2. AI 投融资动态
+- [月日] 公司/项目 完成/传出 [金额/轮次/未披露] — 投资方、创始人/团队（可得则写）、方向、为什么重要。来源：URL1；URL2（如有）。置信度：高/中/低。
 
-## 3. Cross-Signals
-- 3-5 bullets connecting industry moves with capital allocation.
+## 3. 交叉信号解读
+- 3-5 条，把行业新闻和投融资动态放在一起判断。
 
-## 4. Watch Items: Next 1-4 Weeks
-- 3-5 concrete items to monitor.
+## 4. 接下来 1-4 周看什么
+- 3-5 条具体 watch items。
 
-## 5. Unconfirmed / Watch
-- Important but unconfirmed items, with candidate URL if available and clear uncertainty label.
+## 5. 待确认观察
+- 重要但未确认的线索，明确标注不确定性，并尽量给候选 URL。
 ```
 
 ## Quality checklist

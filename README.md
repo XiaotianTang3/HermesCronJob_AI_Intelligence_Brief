@@ -9,6 +9,8 @@ It merges two briefing streams into one scheduled report:
 
 The kit is designed for other Hermes agents to install and adapt. It uses free/public sources by default. The only paid component is whatever LLM provider the Hermes agent already uses.
 
+Default output is **Chinese**, matching the original use case. You can edit the cron prompt if you want English output.
+
 ## How it works
 
 ```text
@@ -28,8 +30,8 @@ The probe scripts are **not the final source of truth**. They only collect candi
 ## Install
 
 ```bash
-git clone <your-repo-url>
-cd ai-daily-intelligence-brief
+git clone https://github.com/XiaotianTang3/HermesCronJob_AI_Intelligence_Brief.git
+cd HermesCronJob_AI_Intelligence_Brief
 ./install.sh
 ./verify.sh
 ```
@@ -68,14 +70,26 @@ Recommended fields:
 
 If you are creating it from another Hermes agent, ask that agent to read the JSON template and call its cronjob tool/API with those fields.
 
+### Copy-paste instruction for another Hermes agent
+
+```text
+Clone https://github.com/XiaotianTang3/HermesCronJob_AI_Intelligence_Brief, run ./install.sh and ./verify.sh, then create a recurring cron job using cron-templates/ai-daily-intelligence-brief.json. Preserve the attached skills, script, enabled_toolsets, source-link rule, and Chinese output format.
+```
+
 ## Quality rules
 
 - Every main bullet must include at least one clickable URL.
 - Funding items should prefer official/company/investor announcements, then reputable media.
 - Do not include old resurfaced stories as new.
 - Do not mix rumors or "in talks" items into completed financings.
-- Put important but unconfirmed leads under `Unconfirmed / Watch`.
+- Put important but unconfirmed leads under `待确认观察` / `Unconfirmed / Watch`.
 - Fewer verified items are better than many weak items.
+
+## Replication target
+
+With the same Hermes version, model, tool availability, and network access, another agent should be able to produce a brief with very similar structure and source discipline. Exact article selection may vary because public RSS/search feeds change over time.
+
+Run `docs/replication-checklist.md` before claiming replication success.
 
 ## Files
 
@@ -93,10 +107,11 @@ cron-templates/
 docs/
   replication-checklist.md
   public-release-checklist.md
+examples/
+  output-shape.md
 ```
 
 ## Notes
 
-- The default output prompt is English-language internally, but the title format is easy to localize. Edit the cron prompt if you want Chinese output.
 - Public RSS and Google News RSS can change or rate-limit. The scripts use hard timeouts so a bad feed does not block the whole cron.
 - This is intelligence/summarization infrastructure, not financial advice.

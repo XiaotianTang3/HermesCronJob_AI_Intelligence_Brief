@@ -3,20 +3,20 @@
 ```markdown
 # AI Daily Intelligence Brief｜YYYY-MM-DD
 
-Today’s main signal: ...
+今天的主线是：……
 
-## 1. AI Industry News
-- [Date] Event title — What happened and why it matters. Source: https://example.com/article. Confidence: High.
+## 1. AI 行业动态
+- [6月21日] 事件标题 — 2-3 句解释谁做了什么、为什么重要、对产品/商业/竞争格局意味着什么。来源：https://example.com/article。置信度：高。
 
-## 2. AI Investment & Funding
-- [Date] Company raised $X Series A — Investors, direction, why it matters. Source: https://company.com/news; https://reputable-media.com/article. Confidence: High.
+## 2. AI 投融资动态
+- [6月21日] Company 完成 X 美元 A 轮 — 投资方、方向、为什么重要。来源：https://company.com/news；https://reputable-media.com/article。置信度：高。
 
-## 3. Cross-Signals
-- ...
+## 3. 交叉信号解读
+- ……
 
-## 4. Watch Items: Next 1-4 Weeks
-- ...
+## 4. 接下来 1-4 周看什么
+- ……
 
-## 5. Unconfirmed / Watch
-- ...
+## 5. 待确认观察
+- ……
 ```
