@@ -115,3 +115,10 @@ examples/
 
 - Public RSS and Google News RSS can change or rate-limit. The scripts use hard timeouts so a bad feed does not block the whole cron.
 - This is intelligence/summarization infrastructure, not financial advice.
+
+## Optional: Email Delivery via Resend
+The updated prompt template includes an instruction to send the final brief via email using a local `send_ai_brief.py` script. 
+To enable this:
+1. Ensure you have a valid `RESEND_API_KEY` and target emails configured in `~/.hermes/.env` (e.g., `RESEND_TARGETS_01="your_email@example.com"`).
+2. Ensure you have a `send_ai_brief.py` script in `~/.hermes/scripts/` capable of reading these environment variables and firing the Resend API.
+3. If you do not want email delivery, simply remove the "特别任务（邮件订阅交付）" section from the `cron-templates/ai-daily-intelligence-brief.json` prompt before creating the job.
